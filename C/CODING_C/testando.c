@@ -56,7 +56,7 @@ void entradaDadosAluno() {
         printf("Dados do aluno cadastrados com sucesso!\n");
         numAlunos++;
     } else {
-        printf("Número máximo de alunos atingido. Impossível cadastrar mais alunos.\n");
+        printf("Numero maximo de alunos atingido. Impossivel cadastrar mais alunos.\n");
     }
 }
 
@@ -64,17 +64,17 @@ void entradaDadosAluno() {
 void mostrarMedias() {
     if (numAlunos > 0) {
         float mediaGeral = 0.0;
-        printf("\n=== Média individual de todos os alunos ===\n");
+        printf("\n=== Media individual de todos os alunos ===\n");
         for (int i = 0; i < numAlunos; i++) {
             printf("Aluno: %s\n", nomes[i]);
-            printf("Média: %.2f\n", medias[i]);
+            printf("Media: %.2f\n", medias[i]);
             printf("\n");
             mediaGeral += medias[i];
         }
         mediaGeral /= numAlunos;
-        printf("Média geral da turma: %.2f\n", mediaGeral);
+        printf("Media geral da turma: %.2f\n", mediaGeral);
     } else {
-        printf("Não há alunos cadastrados.\n");
+        printf("Nao ha alunos cadastrados.\n");
     }
 }
 
@@ -87,12 +87,12 @@ void alunosAprovados() {
                 printf("Nome: %s\n", nomes[i]);
                 printf("Sexo: %c\n", sexos[i]);
                 printf("Data de nascimento: %s\n", datasNascimento[i]);
-                printf("Média: %.2f\n", medias[i]);
+                printf("Media: %.2f\n", medias[i]);
                 printf("\n");
             }
         }
     } else {
-        printf("Não há alunos cadastrados.\n");
+        printf("Nao ha alunos cadastrados.\n");
     }
 }
 
@@ -100,7 +100,7 @@ void alunosAprovados() {
 void relacaoPorFaixaDeMedia() {
     if (numAlunos > 0) {
         int abaixo5 = 0, entre5e7 = 0, acima7 = 0;
-        printf("\n=== Relação de alunos por faixa de média ===\n");
+        printf("\n=== Relacao de alunos por faixa de media ===\n");
         for (int i = 0; i < numAlunos; i++) {
             if (medias[i] < 5.0) {
                 abaixo5++;
@@ -114,7 +114,7 @@ void relacaoPorFaixaDeMedia() {
         printf("Alunos com média entre 5 e 7: %d\n", entre5e7);
         printf("Alunos com média acima de 7: %d\n", acima7);
     } else {
-        printf("Não há alunos cadastrados.\n");
+        printf("Não ha alunos cadastrados.\n");
     }
 }
 
@@ -134,14 +134,14 @@ void mediaNotasPorSexo() {
             }
         }
         if (numMulheres > 0) {
-            printf("Média das notas das mulheres: %.2f\n", somaNotasMulheres / numMulheres);
+            printf("Media das notas das mulheres: %.2f\n", somaNotasMulheres / numMulheres);
         } else {
             printf("Nao ha mulheres cadastradas.\n");
         }
         if (numHomens > 0) {
             printf("Media das notas dos homens: %.2f\n", somaNotasHomens / numHomens);
         } else {
-            printf("Nao há homens cadastrados.\n");
+            printf("Nao ha homens cadastrados.\n");
         }
     } else {
         printf("Nao ha alunos cadastrados.\n");
@@ -215,7 +215,7 @@ int main() {
                 printf("Encerrando o programa...\n");
                 break;
             default:
-                printf("Opção inválida. Tente novamente.\n");
+                printf("Opcao invalida. Tente novamente.\n");
                 break;
         }
         

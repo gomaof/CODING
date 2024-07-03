@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>CADASTRO DE USUARIOS</h1>
+    <a href="main.html">HOME</a><hr>
+
+    <form action="main.html" method="get"> <!--metodo get é pegar/buscar informações para enviar em alguma URL, vai ficar as informações salvar na URL que enviou bem dizer
+        
+    Já em um metodo post: nos mandadamos a url+o corpo chamado "payload"
+    se for usar o post é bom usar o protocolo HTTPS-->
+    
+        nome: <input type="text" name="nome" placeholder="DIGITE SEU NOME"> Email: <input type="text" name="Email" placeholder="DIGITE SEU EMAIL"><br><br>
+        login: <input type="text" name="login" placeholder="DIGITE SEU LOGIN">
+        senha: <input type="password" name="senha" placeholder="DIGITE SUA SENHA"><br>
+        <br><input type="submit" value="salvar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="limpar">
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>nome</th>
+            <th>Email</th>
+            <th>login</th>
+            <th>senha</th>
+            <th>OPÇÕES</th>
+        </tr>
+        <tr>
+            <td>teste1</td>
+            <td>teste2</td>
+            <td>teste3</td>
+            <td>teste4</td>
+            <td>EDITAR / EXCLUIR</td>
+        </tr>
+        <tr>
+            <td>teste1</td>
+            <td>teste2</td>
+            <td>teste3</td>
+            <td>teste4</td>
+            <td>
+                <a href="#">EDITAR / EXCLUIR</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
