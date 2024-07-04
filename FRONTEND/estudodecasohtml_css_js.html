@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>América do Sul</title>
+    <!-- Incluindo jQuery a partir de um CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#barra").click(function(){
+                $("#painel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #painel, #barra {
+            padding: 5px;
+            text-align: center;
+            background-color: #EEC900;
+            border: solid 0px;
+            font-size: 20px;
+        }
+        #painel {
+            padding: 20px;
+            display: none;
+            font-size: 14px;
+        }
+        body {
+            background-color: white;
+            font-family: "Times New Roman", Times, serif;
+            color: black;
+            font-size: 14px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        a:link {
+            color: #EEC900;
+        }
+        a:visited {
+            color: gray;
+        }
+        a:hover {
+            color: green;
+        }
+        a:active {
+            color: #EEC900;
+        }
+        .menu {
+            float: left;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: #EEC900;
+        }
+        .caixa, .caixa2 {
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            width: 31.5%;
+            border: 0px;
+        }
+        .caixa2 {
+            width: 16.66%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            |
+            <a href="index.html">HOME</a> |
+            <a href="https://pt.wikipedia.org" target="_blank">WIKIPEDIA</a> |
+            <a href="http://www.cesumar.br" target="_blank">UNICESUMAR</a>
+        </nav>
+    </div>
+    <div class="menu">
+        <svg width="100%" height="100">
+            <rect width="100%" height="100" style="fill:rgb(0,0,0);"></rect>
+            <text fill="#EEC900" font-size="30" font-family="Times New Roman" x="50" y="40">AMÉRICA DO SUL</text>
+            <text fill="#EEC900" font-size="20" font-family="Times New Roman" x="50" y="80">Capitais Turísticas a Preços Acessíveis</text>
+        </svg>
+        <form action="index.html" method="get">
+            | Nome: <input type="text" name="nome" required>
+            E-mail: <input type="email" name="email" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div id="barra"><strong>Turismo na América do Sul</strong></div>
+    <div id="painel">
+        O turismo na América do Sul é uma das áreas que mais cresce na economia sul-americana. Com a maior floresta tropical do mundo (Amazônia), o maior rio do mundo (Amazonas), a segunda maior cadeia de montanhas (Andes), ilhas oceânicas isoladas (Galápagos, Ilha de Páscoa e Fernando de Noronha), praias paradisíacas (litoral do Nordeste Brasileiro), desertos (Atacama), paisagens glaciais (Patagônia e Terra do Fogo), a mais alta cachoeira do mundo (Salto Angel, com 979 metros de queda, na Venezuela) e as quedas com o maior volume de água (Cataratas do Iguaçu), dentre muitos outros monumentos naturais e criados pelo homem que atraem turistas de todo o mundo.
+    </div>
+    <div class="caixa2">
+        <img src="cristo.jpg" width="100%">Cristo
+    </div>
+    <div class="caixa2">
+        <img src="machupichu.jpg" width="100%">Machu Pichu
+    </div>
+    <div class="caixa2">
+        <img src="valparaiso.jpg" width="100%">Val Paraiso
+    </div>
+    <div class="caixa2">
+        <img src="patagonia.jpg" width="100%">Patagonia
+    </div>
+    <div class="caixa2">
+        <img src="cataratas.jpg" width="100%">Cataratas
+    </div>
+    <div class="caixa2">
+        <img src="plazaarmasperu.jpg" width="100%">Plaza de Armas
+    </div>
+    <div class="caixa">
+        <a href="buenosaires.html"><h2>Argentina</h2>
+        <img src="argentina.jpg" width="100%"></a>
+    </div>
+    <div class="caixa">
+        <a href="brasilia.html"><h2>Brasil</h2>
+        <img src="brasil.jpg" width="100%"></a>
+    </div>
+    <div class="caixa">
+        <a href="santiago.html"><h2>Chile</h2>
+        <img src="chile.jpg" width="100%"></a>
+    </div>
+    <div class="caixa">
+        <a href="bogota.html"><h2>Colômbia</h2>
+        <img src="colombia.jpg" width="100%"></a>
+    </div>
+    <div class="caixa">
+        <a href="lima.html"><h2>Peru</h2>
+        <img src="peru.jpg" width="100%"></a>
+    </div>
+    <div class="caixa">
+        <a href="montevideo.html"><h2>Uruguai</h2>
+        <img src="uruguai.jpg" width="100%"></a>
+    </div>
+    <div class="caixa">
+        <p>Fonte: Wikipédia, a enciclopédia livre.</p>
+    </div>
+</body>
+</html>

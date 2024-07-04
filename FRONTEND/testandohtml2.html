@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2</title>
+</head>
+
+<body>
+    <form action="pagina.php" method="post" target="_blank" accept-charset="UTF-8859" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+        <p><button type="submit">Enviar</button></p>
+        <p><label>Procurar <input type="search" name="pesquisa"></label></p>
+        <p><button type="submit">Enviar</button></p>
+        <p><label>Horário do Evento <input type="time" name="horario"></label></p>
+        <p><button type="submit">Enviar</button></p>
+        Lista de Itens
+        <select name="lista">
+            <option value="Item 1" selected>Item 1</option>
+            <option value="Item 2">Item 2</option>
+            <option value="Item 3">Item 3</option>
+            <option value="Item 4">Item 4</option>
+        </select>
+        <p><button type="submit">Enviar</button></p>
+        <p>Caixa de Texto <textarea name="mensagem" rows="10" cols="30" placeholder=" Digite seu texto aqui!"></textarea></p>
+        <p>Escolha o navegador preferido<input list="navegador">
+            <datalist id="navegador">
+                <option value="Microsoft Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </p>
+        <p>Sexo
+            <input type="radio" name="sexo" value="masculino" checked>Masculino
+            <input type="radio" name="sexo" value="feminino">Feminino
+        </p>
+        <p><input type="checkbox" name="casado" value="Casado"> Casado <br />
+            <input type="checkbox" name="filhos" value="Filhos"> Tenho filhos:
+            <input type="number" name="filhos" min="0" max="99" step="1" value="0">
+        </p>
+        Data de Nascimento
+        <input type="date" name="nascimento" max="2015-01-01"><br>
+        Cor favorita<input type="color" name="cor"><br />
+        <fieldset>
+            <legend>Informação</legend>
+            <p><label>E-mail <input type="email" name="email" placeholder="usuario@dominio.com"></label></p>
+            <p><label>Site <input type="url" name="site" placeholder="https://www.site.com/"></label></p>
+            <p><label>Telefone <input type="tel" name="fone" placeholder="99999-9999"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Login</legend>
+            <p><label>Usuário <input type="text" name="usuario" required></label></p>
+            <p><label>Senha <input type="password" name="senha" required></label></p>
+        </fieldset>
+        <p><button type="submit" onclick="alert('Dados Enviados')">Enviar</button></p>
+    </form>
+</body>
+
+</html>

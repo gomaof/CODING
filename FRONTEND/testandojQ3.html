@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fade Toggle Example</title>
+    <!-- Incluir jQuery a partir de um CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").fadeToggle(100);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>CLIQUE</button><br><br>
+    <div style="width:200px; height:200px; background-color:red;"></div>
+</body>
+</html>

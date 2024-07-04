@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo jQuery</title>
+    <style>
+        p {
+            font-size: 20px; /* Corrigido de "fonte-size" para "font-size" */
+            color: red;
+        }
+    </style>
+    <!-- Inclusão do jQuery a partir de um CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#ve").click(function(){
+                $("p").show();
+            });
+            $("#naoVe").click(function(){
+                $("p").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>MENSAGEM EXEMPLO</p>
+    <button id="ve">VER</button>
+    <button id="naoVe">NÃO VER</button>
+</body>
+</html>

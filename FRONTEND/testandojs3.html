@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TROCA DE IMAGENS</title>
+</head>
+<body>
+    <h1>TROCA DE IMAGENS</h1>
+    <img id="imagem" onclick="troca()" src="inicial.jpg" width="100%">
+    <p>CLIQUE PARA TROCAR A IMAGEM</p>
+    <script>
+        function troca() {
+            var figura = document.getElementById("imagem");
+            if (figura.src.match("inicial")) {
+                figura.src = "https://pngimg.com/uploads/bmw_logo/bmw_logo_PNG19705.png";
+            } else {
+                figura.src = "https://bmwautoberon.es/wp-content/uploads/2020/03/cropped-Logo_BMW_Web_Augusta-favicon.png";
+            }
+        }
+    </script>
+</body>
+</html>

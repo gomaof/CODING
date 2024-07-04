@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo jQuery</title>
+    <!-- Inclusão do jQuery a partir de um CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeOut("slow");
+                $("#div2").fadeOut(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>CLIQUE</button><br><br>
+    <div id="div1" style="width:100px; height:100px; background-color:red;"></div>
+    <div id="div2" style="width:50px; height:50px; background-color:black;"></div>
+</body>
+</html>
